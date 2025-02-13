@@ -12,7 +12,7 @@ const Login = () => {
     e.preventDefault();
     try {
       await login(email, password);
-      navigate("/"); // Redirect to home after login
+      navigate("/"); 
     } catch (error) {
       console.error("Login error:", error.message);
     }
